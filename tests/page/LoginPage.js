@@ -34,7 +34,12 @@ async commit3(username,password){
     await this.password.fill(password)
     await this.signin.click({TIMEOUT:5000})
 }
+sync commit4(username,password){
 
+    await this.email.fill(username)
+    await this.password.fill(password)
+    await this.signin.click({TIMEOUT:5000})
+}
 
 }
 
